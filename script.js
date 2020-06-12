@@ -18,7 +18,7 @@ function generatePassword() {
 
   if (lowerCaseConfirm) {
     console.log("lowerecase");
-    //if they want lower case you will push lowerCase to the confirm array
+    
     garantedCharacters += randomCharacters(lowerCase)
     availableCharacters += lowerCase
   }
@@ -50,23 +50,8 @@ for (let index = garantedCharacters.length; index < numberOfCharacters; index++)
 
 }
 
-// var chosenPassword = "user password"
-
-
-
 return garantedCharacters;
 
-
-
-
-
-
-
-
-  // passCriteria.push(lowerCase,upperCase,numbers,charaTers);
-
-  // console.log(numChar);
-  // console.log(password);
 
 }
 // Write password to the #password input
@@ -83,38 +68,4 @@ function randomCharacters(characterStrings) {
 
 }
 
-
-
-
-//   var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-//     'abcdefghijklmnopqrstuvwxyz0123456789@#$';
-
-//   var charNum = document.getElementById("charNum");
-//   var numBox = document.getElementById("num");
-//   var symBox = document.getElementById("sym");
-//   var submit = document.getElementById("submit");
-//   var yourPw = document.getElementById("yourPw");
-//   submit.addEventListener("click", function (e) {
-//     var characters = char;
-//     (numBox.checked) ? characters += num : " ";
-//     (symBox.checked) ? characters += sym : " ";
-//     yourPw.value = password(charNum.value, characters);
-//   });
-
-// }
-// passwordText.value = password;
-// function password(l.characters) {
-
-//   var pwd = " ";
-//   for (var i = 0; i < l; i++0)
-
-//   pwd += characters.charAt(Math.floor(Math.random() * characters.length));
-// }
-// return.pwd;
-
-
-
-
-
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
